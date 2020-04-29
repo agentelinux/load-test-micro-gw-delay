@@ -1,0 +1,43 @@
+{
+
+"DelayAPI__1_0_0" : {
+  "openapi" : "3.0.0",
+  "info" : {
+    "title" : "DelayAPI",
+    "description" : "This API contains operations related to online shopping store.",
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "/"
+  } ],
+  "paths" : {
+    "/versao" : {
+      "get" : {
+        "parameters" : [ {
+          "name" : "x-delay",
+          "in" : "header",
+          "required" : true,
+          "style" : "SIMPLE",
+          "explode" : false,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation"
+          }
+        }
+      }
+    }
+  },
+  "extensions" : {
+    "x-wso2-basePath" : "/delay/{version}",
+    "x-wso2-throttling-tier" : "50kPerMin",
+    "x-wso2-production-endpoints" : {
+      "urls" : [ "http://delay" ]
+    }
+  }
+}
+
+}

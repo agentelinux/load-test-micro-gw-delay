@@ -1,0 +1,28 @@
+[project]
+org-name= "wso2"
+version= "3.1.0"
+
+[dependencies]
+"wso2/gateway" = { path = "/Users/joaoemilio/wso2/projects/smiles/wso2am-micro-gw-toolkit-macos-3.1.0/lib/gateway-balo/gateway-2019r3-java8-3.1.0.balo"}
+
+
+[platform]
+target = "java8"
+
+    [[platform.libraries]]
+        module = "jms"
+        path = "/Users/joaoemilio/wso2/projects/smiles/wso2am-micro-gw-toolkit-macos-3.1.0/lib/dependencies/andes-client-3.3.9.jar"
+
+    [[platform.libraries]]
+        module = "jms"
+        path = "/Users/joaoemilio/wso2/projects/smiles/wso2am-micro-gw-toolkit-macos-3.1.0/lib/dependencies/org.wso2.securevault-1.1.1.jar"
+
+    [[platform.libraries]]
+        module = "interceptor"
+        path = "/Users/joaoemilio/wso2/projects/smiles/wso2am-micro-gw-toolkit-macos-3.1.0/lib/dependencies/mgw-interceptor-3.1.0.jar"
+
+     [[platform.libraries]]
+        module = "callhome"
+        path = "/Users/joaoemilio/wso2/projects/smiles/wso2am-micro-gw-toolkit-macos-3.1.0/lib/gateway/platform/core-1.0.4.jar"
+
+
